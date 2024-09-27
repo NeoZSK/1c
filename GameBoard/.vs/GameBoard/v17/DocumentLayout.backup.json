@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\1c\\GameBoard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A982FFD-6AB0-4AC6-9E1D-C4A9A97CD1E8}|GameBoard.vcxproj|C:\\Users\\User\\Documents\\1c\\GameBoard\\GameBoard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A982FFD-6AB0-4AC6-9E1D-C4A9A97CD1E8}|GameBoard.vcxproj|solutionrelative:GameBoard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameBoard.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\1c\\GameBoard\\GameBoard.cpp",
+              "RelativeDocumentMoniker": "GameBoard.cpp",
+              "ToolTip": "C:\\Users\\User\\Documents\\1c\\GameBoard\\GameBoard.cpp",
+              "RelativeToolTip": "GameBoard.cpp",
+              "ViewState": "AgIAACcAAAAAMjMzMzMbwCsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-27T06:43:42.323Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

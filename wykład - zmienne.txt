@@ -1,0 +1,45 @@
+Zadanie na start:
+
+Używając 0 i 1, zakoduj wartości używając jak najmniejszej ilości cyfr:
+
+a) 0
+b) 1
+c) 2
+d) 3
+e) 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Typy zmiennych 
+	- char
+	- short
+	- int
+	- long
+	- long long
+	
+2. Ich reprezentacja w pamięci
+3. Jak policzyć zakres zmiennej
+
+> Zad 1
+Policz zakres typu short (2 bajty) 
+
+4. unsigned
+
+5. ASCII
+ 
+> Zad 2
+Wskaż liczbę (w systemie dziesiętnym) wskazującą na literę "a" w tablicy ASCII
