@@ -1,4 +1,0 @@
-1. Plik z poprzednim zadaniem zapisz do folderu z dzisiejszą datą.
-2. Przepisz poniższy algorytmn do nowego pliku draw.io
-3. Zapisz jako "sprawdzanie_parzystości.drawio"- o folderu z datą 25.09.2024
-4. Poinformuj mnie, gdy to zrobisz
