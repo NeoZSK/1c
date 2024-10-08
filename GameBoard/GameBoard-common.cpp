@@ -16,9 +16,8 @@ int main()
 	posX = 15;
 	posY = 7;
 
-
 	while (true) {
-
+		system("cls");
 
 		for (int i = 0; i < height; i++) {
 			for (int j = 0; j < width; j++) {
