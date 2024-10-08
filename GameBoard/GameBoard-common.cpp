@@ -6,29 +6,39 @@ int main()
 {
 	const char CHARACTER = '*';
 
+	string command;
+
 	int width = 31;
 	int height = 15;
 
 	// spawnpoint -> 0,0
-	int x, y;
-	x = 0;
-	y = 0;
+	int posX, posY;
+	posX = 15;
+	posY = 7;
 
-	cout << "Enter x coord: ";
-	cin >> x;
-	cout << "Enter y coord: ";
-	cin >> y;
+
+
 
 	for (int i = 0; i < height; i++) {
 		for (int j = 0; j < width; j++) {
-			if (x == j && y == i) {
+			if (posX == j && posY == i) {
 				cout << CHARACTER;
-			} else {
+			}
+			else {
 				cout << ".";
 			}
 		}
 		cout << endl;
 	}
+
+	cout << "Enter command (w,s,a,d): ";
+	cin >> command;
+
+	if (command == "w") {
+		posY--;
+	}
+
+
 
 
 }
