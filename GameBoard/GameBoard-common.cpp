@@ -17,27 +17,29 @@ int main()
 	posY = 7;
 
 
+	while (true) {
 
 
-	for (int i = 0; i < height; i++) {
-		for (int j = 0; j < width; j++) {
-			if (posX == j && posY == i) {
-				cout << CHARACTER;
+		for (int i = 0; i < height; i++) {
+			for (int j = 0; j < width; j++) {
+				if (posX == j && posY == i) {
+					cout << CHARACTER;
+				}
+				else {
+					cout << ".";
+				}
 			}
-			else {
-				cout << ".";
-			}
+			cout << endl;
 		}
-		cout << endl;
+
+		cout << "Enter command (w,s,a,d): ";
+		cin >> command;
+
+		if (command == "w") {
+			posY--;
+		}
+
 	}
-
-	cout << "Enter command (w,s,a,d): ";
-	cin >> command;
-
-	if (command == "w") {
-		posY--;
-	}
-
 
 
 
