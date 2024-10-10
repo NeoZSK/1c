@@ -6,12 +6,12 @@ int main()
 {
 	const char CHARACTER = '*';
 
-	string command;
+	char command;
 
 	int width = 31;
 	int height = 15;
 
-	// spawnpoint -> 0,0
+	// spawnpoint
 	int posX, posY;
 	posX = 15;
 	posY = 7;
@@ -34,12 +34,38 @@ int main()
 		cout << "Enter command (w,s,a,d): ";
 		cin >> command;
 
-		if (command == "w") {
+//		int width = 31;
+	//	int height = 15;
+
+		switch (command)
+		{
+		case 'w':
 			posY--;
+			break;
+
+
+		case 's':
+			posY++;
+			break;
+
+		case 'a':
+			posX--;
+			break;
+
+
+		case 'd':
+			posX++;
+			break;
+
+
+		default:
+			break;
+
+
 		}
-
 	}
-
-
-
 }
+
+
+// Hotbar i przedmioty
+
