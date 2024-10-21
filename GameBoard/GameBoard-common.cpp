@@ -2,11 +2,35 @@
 
 using namespace std;
 
+
+int sum(int a, int b)
+{
+	int result = a + b;
+
+	return result;
+}
+
+int getNumber() {
+	int number = 0;
+
+	cout << "Provide a number: ";
+	cin >> number;
+	return number;
+}
+
 int main()
 {
+	int num1 = getNumber();
+	int num2 = getNumber();
+	 
+	cout << sum(num1, num2);
+
+
+	return 0;
+
 	const char CHARACTER = '*';
 
-	char command;
+	string command;
 
 	int width = 31;
 	int height = 15;
@@ -34,38 +58,36 @@ int main()
 		cout << "Enter command (w,s,a,d): ";
 		cin >> command;
 
-//		int width = 31;
+	//  int width = 31;
 	//	int height = 15;
 
-		switch (command)
-		{
-		case 'w':
+		if (command == "w") {
 			posY--;
-			break;
-
-
-		case 's':
+		}
+		
+		if (command == "s") {
 			posY++;
-			break;
-
-		case 'a':
-			posX--;
-			break;
-
-
-		case 'd':
-			posX++;
-			break;
-
-
-		default:
-			break;
-
 
 		}
+
+		if (command == "a") {
+			posX--;
+
+		}
+
+		if (command == "d") {
+			posX++;
+
+		}
+
 	}
 }
 
 
 // Hotbar i przedmioty
+
+
+
+
+
 
