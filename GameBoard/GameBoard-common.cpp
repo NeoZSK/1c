@@ -1,12 +1,13 @@
 ﻿#include <iostream>
+#include <windows.h> // system("cls");
 
 using namespace std;
+
 
 
 int sum(int a, int b)
 {
 	int result = a + b;
-
 	return result;
 }
 
@@ -18,53 +19,53 @@ int getNumber() {
 	return number;
 }
 
+
+
+void drawBoard(int posX, int posY) {
+	const int width = 31;
+	const int height = 15;
+	const char CHARACTER = '*';
+	system("cls");
+
+
+	for (int i = 0; i < height; i++) {
+		for (int j = 0; j < width; j++) {
+			if (posX == j && posY == i) {
+				cout << CHARACTER;
+			}
+			else {
+				cout << ".";
+			}
+		}
+		cout << endl;
+	}
+}
+
+
 int main()
 {
-	int num1 = getNumber();
-	int num2 = getNumber();
-	 
-	cout << sum(num1, num2);
-
-
-	return 0;
-
-	const char CHARACTER = '*';
-
+	int posX, posY;
 	string command;
 
-	int width = 31;
-	int height = 15;
-
 	// spawnpoint
-	int posX, posY;
-	posX = 15;
+
 	posY = 7;
+	posX = 15;
+
+	drawBoard(posX, posY);
+	drawBoard(posX, posY);
+	drawBoard(posX, posY);
 
 	while (true) {
-		system("cls");
-
-		for (int i = 0; i < height; i++) {
-			for (int j = 0; j < width; j++) {
-				if (posX == j && posY == i) {
-					cout << CHARACTER;
-				}
-				else {
-					cout << ".";
-				}
-			}
-			cout << endl;
-		}
+		drawBoard(posX, posY);
 
 		cout << "Enter command (w,s,a,d): ";
 		cin >> command;
 
-	//  int width = 31;
-	//	int height = 15;
-
 		if (command == "w") {
 			posY--;
 		}
-		
+
 		if (command == "s") {
 			posY++;
 
