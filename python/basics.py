@@ -2,12 +2,15 @@
 
 #output
 print("hi")
+
 #input
 b=int(input("enter a number:"))
 print(b)
+
 #zmienne i operacje
 a=5
 c="cos"
+
 #warunki
 if b > 5:
     print("b>5")
@@ -15,6 +18,7 @@ elif b>5:
     print("b<5")
 else:
     print("b=5")
+    
 #pętle
 y=int(input("enter a number:"))
 while y > 0:
@@ -35,7 +39,7 @@ for elem in l:
     print(elem)
 print("- - - - - -")
 
-bool
+# bool
 
 b1= True
 b2= False
@@ -62,7 +66,6 @@ if True or True:
     print("true")
 
 #not
-
 if not True:
     print("false")
 
