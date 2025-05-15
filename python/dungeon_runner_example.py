@@ -57,14 +57,19 @@ def fight(enemy):
     print(f"\n⚔️ Walka z {enemy['name']}!")
 
     while enemy["hp"] > 0 and is_alive():
+
         damage = random.randint(10, 20)
         enemy["hp"] -= damage
         print(f"{player['name']} zadaje {damage} obrażeń!")
+
         if enemy["hp"] <= 0:
+            
             print(f"{enemy['name']} pokonany!")
             reward = random.choice(list(loot_table))
+
             print(f"🎁 Zdobyto: {reward}")
             player["inventory"].append(reward)
+            
             if reward == "Gold Coin":
                 player["gold"] += 10
             break
