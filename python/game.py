@@ -12,17 +12,33 @@ player = {
 WIDTH = 7
 HEIGHT = 7
 
+map = [[False] * WIDTH for i in range(HEIGHT)]
+
 def print_map():
-    for y in range(HEIGHT):
+    for (y,row) in enumerate(map):
         print()
-        for x in range(WIDTH):
-            inner = "x" if [x, y] == player["pos"] else " "
+        for (x,field) in enumerate(row):
+            # player -> x
+            # not discovered -> ?
+            # discovered -> -
+
+            if [x, y] == player["pos"]:
+                inner = "x"
+            elif field == False:
+                inner = "?"
+            else:
+                inner = " "
+           
             print(f"[{inner}]", end="")
     print()
 
 
 def move_player():
     key = input("Your axtion: ")
+    x = player["pos"][0]
+    y = player["pos"][1]
+    map[y][x] = True
+
     if key == 'w' and  player["pos"][1] > 0:
         player["pos"][1] -= 1
     elif key == 's' and player["pos"][1] < HEIGHT - 1:
@@ -53,6 +69,11 @@ def fight_enemy():
 # interactions = ["enemy", "loot", "trap", "nothing"]
 interactions = ["trap"]
 def explore_tile():
+    x = player["pos"][0]
+    y = player["pos"][1]
+    if(map[y][x]):
+        return
+
     interaction = random.choice(interactions)
 
     if interaction == "trap":
