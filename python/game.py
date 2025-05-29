@@ -2,6 +2,10 @@ import math
 import random
 import os
 
+import painter
+
+
+
 player = {
     "exp": 500,
     "hp": 100,
@@ -12,7 +16,11 @@ player = {
 WIDTH = 7
 HEIGHT = 7
 
+painter.init(WIDTH, HEIGHT)
+
 map = [[False] * WIDTH for i in range(HEIGHT)]
+
+
 
 def print_map():
     for (y,row) in enumerate(map):
@@ -92,6 +100,7 @@ while player["hp"] > 0:
     os.system('cls')
     print_info()    
     print_map()
+    painter.print_map()
     print()
     move_player()
     explore_tile()
@@ -102,16 +111,17 @@ os.system('cls')
 print_info()
 print()
 print("💀 Game Over 💀")
-print("""
-      ______
-   .-        -.
-  /            \\
- |,  .-.  .-.  ,|
- | )(_o/  \o_)( |
- |/     /\     \|
- (_     ^^     _)
-  \__|IIIIII|__/
-   | \IIIIII/ |
-   \          /
-    `--------`
-""")
+painter.exit()
+# print("""
+#       ______
+#    .-        -.
+#   /            \\
+#  |,  .-.  .-.  ,|
+#  | )(_o/  \\o_)( |
+#  |/     /\     \|
+#  (_     ^^     _)
+#   \__|IIIIII|__/
+#    | \IIIIII/ |
+#    \          /
+#     `--------`
+# """)
