@@ -1,5 +1,11 @@
-k = int(input("Get k (k >= 1): "))
 n = int(input("Get n (n >= k): "))
+k = int(input("Get k (k >= 1): "))
+
+
+# import math
+# res = math.factorial(n) / (math.factorial(n-k) * math.factorial(k))
+# print(res)
+
     
 licznik = 1
 mianownik = 1
